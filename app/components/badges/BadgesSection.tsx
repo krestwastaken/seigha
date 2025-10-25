@@ -1,4 +1,5 @@
-import Badge from '@/app/components/badges/Badge'
+import Badge from "@/app/components/badges/Badge";
+import LearningHeader from "./LearningHeader";
 
 const BadgesSection = () => {
   const badges = [
@@ -35,7 +36,10 @@ const BadgesSection = () => {
   ];
 
   return (
-    <div className="relative flex flex-col items-center py-20">
+    <div className="relative flex flex-col items-center py-20 space-y-12">
+      {/* Header at the top */}
+      <LearningHeader day="Day 1" title="AI fundamentals" />
+
       {badges.map((badge, index) => (
         <div key={index} className="relative w-full flex flex-col items-center">
           {/* Zig-zag layout */}
@@ -50,7 +54,7 @@ const BadgesSection = () => {
           {/* Diagonal connector to next badge */}
           {index < badges.length - 1 && (
             <svg
-              className="w-full max-w-[200px] h-[80px]"
+              className="w-full max-w-[200px] h-20"
               viewBox="0 0 200 80"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

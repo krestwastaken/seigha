@@ -22,11 +22,11 @@ const Badge = ({ imageSrc, arcsSrc, bgColor, label }: BadgeProps) => {
       >
         {/* Default (Grey) */}
         <div
-          className={`absolute inset-0 flex items-center justify-center transition-all duration-700 ease-in-out ${
+          className={`absolute inset-0 flex items-center justify-center transition-all duration-250 ease-in-out ${
             active ? "opacity-0 scale-95" : "opacity-100 scale-100"
           }`}
         >
-          <div className="relative flex items-center justify-center w-[90px] h-[95px] bg-[#C7C9D1] rounded-full z-10 overflow-hidden">
+          <div className="relative flex items-center justify-center w-[88px] h-[93px] bg-[#C7C9D1] rounded-full z-10 overflow-hidden">
             <Image src={imageSrc} alt={label} width={150} height={150} />
           </div>
         </div>
@@ -45,7 +45,7 @@ const Badge = ({ imageSrc, arcsSrc, bgColor, label }: BadgeProps) => {
             className="absolute z-0"
           />
           <div
-            className={`relative flex items-center justify-center w-[90px] h-[95px] rounded-full z-10 overflow-hidden`}
+            className={`relative flex items-center justify-center w-[88px] h-[93px] rounded-full z-10 overflow-hidden`}
             style={{ backgroundColor: bgColor }}
           >
             <Image src={imageSrc} alt={label} width={150} height={150} />
