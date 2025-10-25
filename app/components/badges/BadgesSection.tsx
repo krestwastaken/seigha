@@ -35,9 +35,39 @@ const BadgesSection = () => {
   ];
 
   return (
-    <div className="flex flex-wrap gap-10 justify-center items-center">
+    <div className="relative flex flex-col items-center py-16">
       {badges.map((badge, index) => (
-        <Badge key={index} {...badge} />
+        <div key={index} className="relative w-full flex flex-col items-center">
+          {/* Zig-zag layout */}
+          <div
+            className={`relative flex items-center justify-center ${
+              index % 2 === 0 ? "translate-x-[-60px]" : "translate-x-[60px]"
+            } transition-all duration-300`}
+          >
+            <Badge {...badge} />
+          </div>
+
+          {/* Diagonal connector to next badge */}
+          {index < badges.length - 1 && (
+            <svg
+              className="w-full max-w-[200px] h-[80px]"
+              viewBox="0 0 200 80"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d={
+                  index % 2 === 0
+                    ? "M100 0 L200 80" // slope down-right
+                    : "M100 0 L0 80" // slope down-left
+                }
+                stroke="#444A6B"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+            </svg>
+          )}
+        </div>
       ))}
     </div>
   );
