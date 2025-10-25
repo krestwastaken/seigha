@@ -1,0 +1,50 @@
+.container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-color: #0e1a4f; /* deep navy background */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arcs {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+}
+
+.circle {
+  position: relative;
+  background-color: #4df1b5; /* mint green inner circle */
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0d1845;
+  z-index: 1;
+}
+
+.parrot {
+  width: 70px;
+  height: 70px;
+}
+
+.badge {
+  position: absolute;
+  right: 25px;
+  background-color: #1b254f;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  border: 2px solid #4df1b5;
+}
