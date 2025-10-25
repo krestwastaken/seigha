@@ -15,7 +15,7 @@ const Badge = ({ imageSrc, arcsSrc, bgColor, label }: BadgeProps) => {
   return (
     <div className="flex items-center justify-center space-x-3 select-none">
       <div
-        className="relative flex items-center justify-center w-40 h-40 cursor-pointer"
+        className="relative flex items-center justify-center w-30 h-30 cursor-pointer"
         onMouseEnter={() => setActive(true)}
         onMouseLeave={() => setActive(false)}
         onClick={() => setActive((prev) => !prev)}
