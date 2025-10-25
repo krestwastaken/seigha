@@ -7,15 +7,15 @@ const ParrotBadge = () => {
 
   return (
     <div
-      className="relative flex items-center justify-center w-40 h-40 cursor-pointer"
+      className="relative flex items-center justify-center w-40 h-40 cursor-pointer select-none"
       onMouseEnter={() => setActive(true)}
       onMouseLeave={() => setActive(false)}
       onClick={() => setActive((prev) => !prev)}
     >
       {/* --- Grey State (Default) --- */}
       <div
-        className={`absolute inset-0 flex items-center justify-center transition-opacity duration-500 ${
-          active ? "opacity-0" : "opacity-100"
+        className={`absolute inset-0 flex items-center justify-center transition-all duration-700 ease-in-out ${
+          active ? "opacity-0 scale-95" : "opacity-100 scale-100"
         }`}
       >
         {/* Grey Circle */}
@@ -33,8 +33,8 @@ const ParrotBadge = () => {
 
       {/* --- Green State (Hover/Active) --- */}
       <div
-        className={`absolute inset-0 flex items-center justify-center transition-opacity duration-500 ${
-          active ? "opacity-100" : "opacity-0"
+        className={`absolute inset-0 flex items-center justify-center transition-all duration-700 ease-in-out ${
+          active ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
       >
         {/* Arcs */}
