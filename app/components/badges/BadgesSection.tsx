@@ -35,7 +35,7 @@ const BadgesSection = () => {
   ];
 
   return (
-    <div className="relative flex flex-col items-center py-16">
+    <div className="relative flex flex-col items-center py-20">
       {badges.map((badge, index) => (
         <div key={index} className="relative w-full flex flex-col items-center">
           {/* Zig-zag layout */}
@@ -62,7 +62,7 @@ const BadgesSection = () => {
                     : "M100 0 L0 80" // slope down-left
                 }
                 stroke="#444A6B"
-                strokeWidth="2"
+                strokeWidth="5"
                 strokeLinecap="round"
               />
             </svg>
