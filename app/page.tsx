@@ -1,11 +1,11 @@
-import ParrotBadge from '@/app/components/ParrotBadge'
+import BadgesSection from './components/badges/BadgesSection';
 
 export default function Home() {
   return (
     <main
       style={{ display: "flex", justifyContent: "center", marginTop: "100px" }}
     >
-      <ParrotBadge />
+      <BadgesSection />
     </main>
   );
 }
