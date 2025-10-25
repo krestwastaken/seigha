@@ -33,7 +33,7 @@ const Badge = ({ imageSrc, arcsSrc, bgColor, label }: BadgeProps) => {
 
         {/* Active (Colored + Arcs) */}
         <div
-          className={`absolute inset-0 flex items-center justify-center transition-all duration-500 ease-in-out ${
+          className={`absolute inset-0 flex items-center justify-center transition-all duration-250 ease-in-out ${
             active ? "opacity-100 scale-100" : "opacity-0 scale-95"
           }`}
         >
