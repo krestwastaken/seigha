@@ -53,7 +53,7 @@ const BadgesSection = () => {
       lengthOfStick: "35dvh",
     },
     {
-      imageSrc: "/bird-logo.png",
+      imageSrc: "/headset.png",
       arcsSrc: "/arcs.png",
       bgColor: "#FF6F91",
       label: "Life coach",
@@ -86,11 +86,6 @@ const BadgesSection = () => {
           }}
         />
       ))}
-      {/* <ParrotBadge />
-      <ParrotBadge />
-      <ParrotBadge />
-      <ParrotBadge /> */}
-      {/* </div> */}
     </div>
   );
 };

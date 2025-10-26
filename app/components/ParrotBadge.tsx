@@ -64,7 +64,7 @@ const ParrotBadge = ({
         >
           <div
             className={`relative flex items-center justify-center w-[15dvw] h-[15dvw] ${
-              active ? "bg-[#4AF0B5]" : "bg-[#bfc1d1] opacity-75"
+              active ? "bg-[#4AF0B5]" : "bg-[#bfc1d1] opacity-100"
             } rounded-full z-10 overflow-hidden`}
           >
             <Image
@@ -95,7 +95,7 @@ const ParrotBadge = ({
 
       {/* --- Side Label --- */}
       <p
-        className="text-[#bfc1d1] absolute text-lg"
+        className="text-[#bfc1d1] absolute text-sm"
         style={{
           left:
             typeof positionFromLeftLabel === "number"
