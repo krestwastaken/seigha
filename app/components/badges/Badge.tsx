@@ -15,7 +15,7 @@ const Badge = ({ imageSrc, arcsSrc, bgColor, label }: BadgeProps) => {
   return (
     <div className="flex items-center justify-center space-x-3 select-none">
       <div
-        className="relative flex items-center justify-center w-30 h-30 cursor-pointer"
+        className="relative flex items-center justify-center w-25 h-25 cursor-pointer"
         onMouseEnter={() => setActive(true)}
         onMouseLeave={() => setActive(false)}
         onClick={() => setActive((prev) => !prev)}
@@ -26,7 +26,7 @@ const Badge = ({ imageSrc, arcsSrc, bgColor, label }: BadgeProps) => {
             active ? "opacity-0 scale-95" : "opacity-100 scale-100"
           }`}
         >
-          <div className="relative flex items-center justify-center w-[88px] h-[93px] bg-[#C7C9D1] rounded-full z-10 overflow-hidden">
+          <div className="relative flex items-center justify-center w-[68px] h-[73px] bg-[#C7C9D1] rounded-full z-10 overflow-hidden">
             <Image src={imageSrc} alt={label} width={150} height={150} />
           </div>
         </div>
@@ -40,12 +40,12 @@ const Badge = ({ imageSrc, arcsSrc, bgColor, label }: BadgeProps) => {
           <Image
             src={arcsSrc}
             alt="Arcs"
-            width={120}
-            height={120}
+            width={95}
+            height={95}
             className="absolute z-0"
           />
           <div
-            className={`relative flex items-center justify-center w-[88px] h-[93px] rounded-full z-10 overflow-hidden`}
+            className={`relative flex items-center justify-center w-[68px] h-[73px] rounded-full z-10 overflow-hidden`}
             style={{ backgroundColor: bgColor }}
           >
             <Image src={imageSrc} alt={label} width={150} height={150} />
@@ -53,7 +53,7 @@ const Badge = ({ imageSrc, arcsSrc, bgColor, label }: BadgeProps) => {
         </div>
       </div>
 
-      <p className="text-[#bfc1d1] text-lg translate-y-[-10%] tracking-wide">
+      <p className="text-[#bfc1d1] text-sm translate-y-[-10%] tracking-wide">
         {label}
       </p>
     </div>
