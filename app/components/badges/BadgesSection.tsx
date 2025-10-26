@@ -17,7 +17,7 @@ const BadgesSection = () => {
       lengthOfStick: "",
     },
     {
-      imageSrc: "/bird-logo.png",
+      imageSrc: "/ai.png",
       arcsSrc: "/arcs.png",
       bgColor: "#FFD166",
       label: "Get taught by an AI avatar",
@@ -29,7 +29,7 @@ const BadgesSection = () => {
       lengthOfStick: "40dvw",
     },
     {
-      imageSrc: "/bird-logo.png",
+      imageSrc: "/peers.png",
       arcsSrc: "/arcs.png",
       bgColor: "#4A90E2",
       label: "Teach a peer",
@@ -41,7 +41,7 @@ const BadgesSection = () => {
       lengthOfStick: "35dvh",
     },
     {
-      imageSrc: "/bird-logo.png",
+      imageSrc: "/peer-tutor.png",
       arcsSrc: "/arcs.png",
       bgColor: "#6DD3CE",
       label: "Get taught by peer",
