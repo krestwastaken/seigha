@@ -18,7 +18,7 @@ const LearningHeader = ({ day, title }: LearningHeaderProps) => {
       </div>
 
       {/* Right Section: Darker green area with white icon box */}
-      <div className="flex items-center justify-center bg-[#36C49B] rounded-xl px-4 py-2.5 translate-x-4 ">
+      <div className="flex items-center justify-center bg-[#36C49B] rounded-xl px-4 py-2.5 translate-x-2 ">
         <div className="flex items-center justify-center w-12 h-12 p-1.5 bg-white rounded-lg shadow-md">
           <BookOpen className="w-6 h-6 text-[#36C49B]" />
         </div>
